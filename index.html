@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>riccardo boe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9305d4995e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <!--THEME MODE-->
+            <li>
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+                </label>
+                <em>Theme</em>
+              </div>
+            </li>
+            <!-- end theme mode-->
+
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, my name is <span>Riccardo</span><br />
+            Boe
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <h1 class="sub-title">About Me</h1>
+            <div class="about-text">
+              <p>
+                Welcome to my resume! I'm an entry-level full stack developer.
+                Currently enrolled in the MIT xPro full stack development
+                course. I like to keep myself busy and that is why I have many
+                hobbies that all have to do with computers. I enjoy Coding,
+                Graphic design, and videogames!
+              </p>
+            </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')"> <strong>
+                Skills
+                </strong>
+              </p>
+              <p class="tab-links" onclick="opentab('experience')"> <strong>
+                Experience
+                </strong>
+              </p>
+              <p class="tab-links" onclick="opentab('education')"> </strong>
+                Education
+                </strong>
+              </p> 
+
+              
+              </div>
+            </div>
+
+            <!-- skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <div class="skill-box">
+                <span class="skill-title">HTML</span>
+
+                <div class="skill-bar">
+                  <span class="skill-per html"> </span>
+                </div>
+              </div>
+
+              <div class="skill-box">
+                <span class="skill-title">CSS</span>
+
+                <div class="skill-bar">
+                  <span class="skill-per css"> </span>
+                </div>
+              </div>
+
+              <div class="skill-box">
+                <span class="skill-title">JAVASCRIPT</span>
+
+                <div class="skill-bar">
+                  <span class="skill-per js"> </span>
+                </div>
+              </div>
+
+              <div class="extra-skill">
+                <ul>
+                  <h1>Extra Skills</h1>
+                </ul>
+                <p>
+                  Fluent in <strong>English</strong>, <strong>Italian</strong>,
+                  <strong> Russian</strong>. <br />Proficient in
+                  <strong>Photoshop</strong>, <strong>Illustrator</strong> &
+                  <strong>other Adobe Cloud apps</strong>. <br />Problem
+                  Solving. Planning & Organizing. Team Player.
+                </p>
+              </div>
+            </div>
+            <!-- experience -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <br />
+                <li>
+                  <h3>
+                    <strong>Fun Factor Party</strong> - Customer Service
+                    Representative & Sales
+                  </h3>
+                  <br />
+                  <p>2018 - 2020, Katy, TX</p>
+                </li>
+                <br />
+                <li>
+                  <h3><strong>Scentsy Family</strong> - Retail Sales</h3>
+                  <br />
+                  <p>June 2018 - Sept. 2020, Katy, TX</p>
+                </li>
+                <br />
+                <li>
+                  <h3>
+                    <strong>H.E.B.</strong> - TSST - Total Store Sanitation Team
+                  </h3>
+                  <br />
+                  <p>April 2022 - current, Katy, TX</p>
+                </li>
+                <br />
+              </ul>
+            </div>
+            <!-- education -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <br />
+                <li>
+                  <h3>
+                    <strong>Obra D. Tompkins</strong> - High School</h3>
+                  <br />
+                  <p>Katy TX, Class of 2020</p>
+                </li>
+                <br />
+                <li>
+                  <h3><strong>H.C.C.</strong> - Major Computer Science</h3>
+                  <br />
+                  <p>Houston TX, 2020-2021</p> 
+                </li>
+                <br />
+                <li>
+                  <h3>
+                    <strong>MIT xPro</strong> - Full Stack Development with MERN course certificate </h3> 
+                  <br />
+                  <p>2021 - Current</p>
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <h2>My Projects</h2>
+            <p>
+              Here is my GitHub page with all my projects that I have done
+              during my MITxPro course and some during my free time.
+            </p>
+            <a
+              href="https://github.com/riccardoboe?tab=repositories"
+              target="_blank"
+              >Click here to check out my projects!</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>First project</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit eaque aperiam obcaecati atque doloremque expedita
+              velit cum accusantium quidem laborum adipisci alias rem, dolore
+              vel veniam nam vitae iste nihil.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Second project</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit eaque aperiam obcaecati atque doloremque expedita
+              velit cum accusantium quidem laborum adipisci alias rem, dolore
+              vel veniam nam vitae iste nihil.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="ccontainer">
+        <h1>Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i> rboe2000@mail.com</p>
+        <br />
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/riccardo-boe-833a53245/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/riccardoboe1" target="_blank"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="https://github.com/riccardoboe/" target="_blank"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //change tab
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      //theme change
+      const toggleSwitch = document.querySelector(
+        '.theme-switch input[type="checkbox"]'
+      );
+
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      }
+
+      toggleSwitch.addEventListener("change", switchTheme, false);
+
+      // side menu phone script
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
