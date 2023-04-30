@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>riccardo boe</title>
+    <title>riccardoboe</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/9305d4995e.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -19,10 +23,10 @@
           <img src="images/logo.png" class="logo" />
 
           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#header">&ltHome&gt</a></li>
+            <li><a href="#about">&ltAbout Me&gt</a></li>
+            <li><a href="#services">&ltPortfolio&gt</a></li>
+            <li><a href="#contact">&ltContact&gt</a></li>
 
             <!--THEME MODE-->
             <li>
@@ -42,10 +46,24 @@
         </nav>
 
         <div class="header-text">
-          <p>Full Stack Developer</p>
           <h1>
-            Hi, my name is <span>Riccardo</span><br />
-            Boe
+            Hi, my name is <br> 
+            
+            <span>R</span>
+            <span>i</span>
+            <span>c</span>
+            <span>c</span>
+            <span>a</span>
+            <span>r</span>
+            <span>d</span>
+            <span>o</span>
+
+            <span>B</span>
+            <span>o</span>
+            <span>e</span>
+
+
+          <p>Full Stack Developer</p>            
           </h1>
         </div>
       </div>
@@ -56,27 +74,23 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <h1 class="sub-title">About Me</h1>
+            <h1 class="sub-title">&ltAbout Me&gt</h1>
             <div class="about-text">
               <p>
-                Welcome to my resume! I'm an entry-level full stack developer.
-                Currently enrolled in the MIT xPro full stack development
-                course. I like to keep myself busy and that is why I have many
-                hobbies that all have to do with computers. I enjoy Coding,
-                Graphic design, and videogames!
+                Welcome to my resume! I'm a full-stack developer. I have a good understanding of both front-end and back-end development. I like to keep myself busy and that is why I have many hobbies; I enjoy Coding, I play guitar, I like to create graphic design, I like to work on my car, and I also love videogames and movies!
               </p>
             </div>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')"> <strong>
-                Skills
+                .skills()
                 </strong>
               </p>
               <p class="tab-links" onclick="opentab('experience')"> <strong>
-                Experience
+                .experience()
                 </strong>
               </p>
-              <p class="tab-links" onclick="opentab('education')"> </strong>
-                Education
+              <p class="tab-links" onclick="opentab('education')"> <strong>
+                .education()
                 </strong>
               </p> 
 
@@ -87,27 +101,31 @@
             <!-- skills -->
             <div class="tab-contents active-tab" id="skills">
               <div class="skill-box">
-                <span class="skill-title">HTML</span>
-
-                <div class="skill-bar">
-                  <span class="skill-per html"> </span>
-                </div>
+                <span class="skill-title">//frontEnd</span>
+                  <i class="fa-brands fa-square-js"  style="color: #F7C327;"></i> &nbsp;&nbsp;
+                  <i class="fa-brands fa-html5"  style="color: #DC4A24;"></i> &nbsp;&nbsp;
+                  <i class="fa-brands fa-css3-alt"  style="color: #3595CF;"></i> &nbsp;&nbsp;
+                  <i class="fa-brands fa-bootstrap" style="color: #58407e;"></i> &nbsp;&nbsp;
               </div>
 
               <div class="skill-box">
-                <span class="skill-title">CSS</span>
-
-                <div class="skill-bar">
-                  <span class="skill-per css"> </span>
-                </div>
+                <span class="skill-title">//backEnd</span>
+                <p>
+                  <i class="fa-brands fa-node-js" style="color: #549e44;"></i> &nbsp;
+                    <img src="images/express-logo.png" style="width:6.5em; height:2em;"> &nbsp;
+                    <img src="images/MongoDB-Logo.png" style=" height:2em;">
+                   
+                </p>
               </div>
 
               <div class="skill-box">
-                <span class="skill-title">JAVASCRIPT</span>
-
-                <div class="skill-bar">
-                  <span class="skill-per js"> </span>
-                </div>
+                <span class="skill-title">//tools</span>
+                <p>
+                  <i class="fa-brands fa-square-git" style="color: #e44c31;"></i> &nbsp;&nbsp;
+                  <i class="fa-brands fa-aws" style="color: #ff9a01;"></i> &nbsp;
+                  <img src="images/firebase.png" style="width:3em; height:2.5em;"> 
+                  <img src="images/apple-touch-icon.png" style="width:2em; height:2em;">
+                </p>
               </div>
 
               <div class="extra-skill">
@@ -118,39 +136,12 @@
                   Fluent in <strong>English</strong>, <strong>Italian</strong>,
                   <strong> Russian</strong>. <br />Proficient in
                   <strong>Photoshop</strong>, <strong>Illustrator</strong> &
-                  <strong>other Adobe Cloud apps</strong>. <br />Problem
-                  Solving. Planning & Organizing. Team Player.
-                </p>
+                  <strong>other Adobe Cloud apps</strong>.
               </div>
             </div>
             <!-- experience -->
             <div class="tab-contents" id="experience">
-              <ul>
-                <br />
-                <li>
-                  <h3>
-                    <strong>Fun Factor Party</strong> - Customer Service
-                    Representative & Sales
-                  </h3>
-                  <br />
-                  <p>2018 - 2020, Katy, TX</p>
-                </li>
-                <br />
-                <li>
-                  <h3><strong>Scentsy Family</strong> - Retail Sales</h3>
-                  <br />
-                  <p>June 2018 - Sept. 2020, Katy, TX</p>
-                </li>
-                <br />
-                <li>
-                  <h3>
-                    <strong>H.E.B.</strong> - TSST - Total Store Sanitation Team
-                  </h3>
-                  <br />
-                  <p>April 2022 - current, Katy, TX</p>
-                </li>
-                <br />
-              </ul>
+              add experience
             </div>
             <!-- education -->
             <div class="tab-contents" id="education">
@@ -159,21 +150,20 @@
                 <li>
                   <h3>
                     <strong>Obra D. Tompkins</strong> - High School</h3>
-                  <br />
                   <p>Katy TX, Class of 2020</p>
+                  <p>1 year of computer science</p>
                 </li>
                 <br />
                 <li>
                   <h3><strong>H.C.C.</strong> - Major Computer Science</h3>
-                  <br />
-                  <p>Houston TX, 2020-2021</p> 
+                  <p>Houston TX, 2020-2022</p> 
                 </li>
                 <br />
                 <li>
                   <h3>
-                    <strong>MIT xPro</strong> - Full Stack Development with MERN course certificate </h3> 
-                  <br />
-                  <p>2021 - Current</p>
+                    <strong>MIT xPro</strong> - Bootcamp </h3> 
+                    <p>2022-2023</p> 
+                    <p>Full Stack Development with MERN course certificate</p>
                 </li>
                 <br />
               </ul>
@@ -188,18 +178,19 @@
       <div class="container">
         <h1 class="sub-title">Portfolio</h1>
         <div class="services-list">
+          
           <div>
-            <i class="fa-brands fa-github"></i>
-            <h2>My Projects</h2>
+            <i class="fa-solid fa-code"></i>
+            <h2>First project</h2>
             <p>
-              Here is my GitHub page with all my projects that I have done
-              during my MITxPro course and some during my free time.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit eaque aperiam obcaecati atque doloremque expedita
+              velit cum accusantium quidem laborum adipisci alias rem, dolore
+              vel veniam nam vitae iste nihil.
             </p>
-            <a
-              href="https://github.com/riccardoboe?tab=repositories"
-              target="_blank"
-              >Click here to check out my projects!</a
-            >
+            <a href="#" target="_blank">Live Demo</a>
+            &nbsp; &nbsp;
+            <a href="#" target="_blank">Source Code</a>
           </div>
 
           <div>
@@ -211,20 +202,39 @@
               velit cum accusantium quidem laborum adipisci alias rem, dolore
               vel veniam nam vitae iste nihil.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#" target="_blank">Live Demo</a>
+            &nbsp; &nbsp;
+            <a href="#" target="_blank">Source Code</a>
           </div>
 
           <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Second project</h2>
+            <h2>First project</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Reprehenderit eaque aperiam obcaecati atque doloremque expedita
               velit cum accusantium quidem laborum adipisci alias rem, dolore
               vel veniam nam vitae iste nihil.
             </p>
-            <a href="#">Learn more</a>
+            <a href="#" target="_blank">Live Demo</a>
+            &nbsp; &nbsp;
+            <a href="#" target="_blank">Source Code</a>
           </div>
+
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>First project</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Reprehenderit eaque aperiam obcaecati atque doloremque expedita
+              velit cum accusantium quidem laborum adipisci alias rem, dolore
+              vel veniam nam vitae iste nihil.
+            </p>
+            <a href="#" target="_blank">Live Demo</a>
+            &nbsp; &nbsp;
+            <a href="#" target="_blank">Source Code</a>
+          </div>
+
         </div>
       </div>
     </div>
@@ -233,7 +243,8 @@
     <div id="contact">
       <div class="ccontainer">
         <h1>Contact Me</h1>
-        <p><i class="fa-solid fa-envelope"></i> rboe2000@mail.com</p>
+
+        <p><i class="fa-solid fa-envelope"></i> <a href = "mailto: riccardoboe0">riccardoboe0@gmail.com</a></p>
         <br />
         <div class="social-icons">
           <a
