@@ -22,7 +22,7 @@ html {
 
 [data-theme="dark"] {
   --primary-background: #f7fbff;
-  --secondary-color: #ddedf4;
+  --secondary-color: #ddf4dd;
   --font-color: #080808;
   --secondary-font: #282828;
 }
@@ -189,6 +189,7 @@ h1 span:nth-child(12) {
 }
 
 .sub-title {
+  text-align: center;
   font-size: 60px;
   font-weight: 600;
   color: var(--font-color);
