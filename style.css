@@ -20,7 +20,7 @@ html {
   --main-dark: #204507;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
   --primary-background: #f7fbff;
   --secondary-color: #ddf4dd;
   --font-color: #080808;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  /* style */
+  width: 100%;
   background: var(--primary-background);
   color: var(--font-color);
 }
@@ -84,7 +84,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 50px;
   text-align: center;
 }
@@ -216,6 +216,7 @@ h1 span:nth-child(12) {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  transition: 0.5s;
 }
 
 .tab-links::after {
@@ -226,7 +227,7 @@ h1 span:nth-child(12) {
   position: absolute;
   left: 0;
   bottom: -8px;
-  transition: 0.5s;
+  transition: transform 0.5s;
 }
 
 .tab-links.active-link::after {
@@ -266,6 +267,10 @@ h1 span:nth-child(12) {
 .tab-contents.active-tab {
   display: block;
   font-size: 25px;
+}
+
+.tab-links:hover {
+  transform: scale(1.1);
 }
 
 /* SERVICES or PORTFOLIO */
@@ -309,7 +314,7 @@ h1 span:nth-child(12) {
   font-size: 20px;
   margin-top: 30px;
   display: inline-block;
-  transition: background 0.5s, transform 0.5s;
+  transition: transform 0.5s;
 }
 
 .services-list div:hover {
@@ -318,9 +323,8 @@ h1 span:nth-child(12) {
 }
 
 .services-list div a:hover {
-  background: var(--main-color);
-  border-radius: 5px;
-  transform: translateX(+10px);
+  background: transparent;
+  transform: scale(1.1);
 }
 
 /* PROJECT PICURES HERE MAKE PIC ZOOM WHEN HOVER */
@@ -331,9 +335,92 @@ h1 span:nth-child(12) {
   margin-top: 100px;
 }
 
+/* CONTACT FORM */
+.contact-box {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: transparent;
+  border: var(--secondary-color) solid 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h1 {
+  color: var(--font-color);
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 5px 0;
+  padding: 10px;
+  outline: none;
+  background: var(--secondary-color);
+  color: var(--secondary-font);
+  font-size: 15px;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: var(--secondary-font);
+  transition: color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  color: var(--secondary-font);
+}
+
+form input:focus::placeholder, form textarea:focus::placeholder {
+  color: transparent;
+}
+
+form button {
+  padding: 15px;
+  background: var(--main-color);
+  color: var(--font-color);
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 25px auto 0;
+  border-radius: 15px;
+}
+
+/* CONTACT LINKS */
 .ccontainer {
   text-align: center;
 }
+
+.ccontainer button {
+  background: transparent;
+  border: none;
+  transition: transform 0.5s;
+}
+
+.ccontainer button:hover {
+  transform: scale(1.1);
+}
+
+
+.ccontainer button a{
+  text-decoration: none;
+  color: var(--secondary-font)
+}
+
 .ccontainer p i {
   font-size: 25px;
   color: var(--main-color);
@@ -365,7 +452,7 @@ h1 span:nth-child(12) {
 
 .social-icons a:hover {
   color: var(--main-color);
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 /* sticky button */
@@ -467,4 +554,5 @@ nav .fa-solid {
   .header-text h1 span {
     font-size: 2rem;
   }
+
 }

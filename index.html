@@ -64,7 +64,7 @@
             <span>e</span>
 
 
-          <p>Full Stack Developer</p>   
+          <p>Full Stack Developer</p>      
           <h1 class="arrow">&#8595</h1>         
           </h1>
         </div>
@@ -79,7 +79,7 @@
             <h1 class="sub-title">&ltAbout Me&gt</h1>
             <div class="about-text">
               <p>
-                Welcome to my resume! I'm a full-stack developer. I have a good understanding of both front-end and back-end development. I like to keep myself busy and that is why I have many hobbies; I enjoy Coding, I play guitar, I like to create graphic design, I like to work on my car, and I also love videogames and movies!
+                Welcome to my portfolio! I am a full-stack developer. I have a good understanding of both front-end and back-end development. I like to keep myself busy and that is why I have many hobbies; I enjoy Coding, I play guitar, I like to create graphic design, I like to work on my car, and I also love videogames and movies!
               </p>
             </div>
             <div class="tab-titles">
@@ -242,10 +242,22 @@
     </div>
 
     <!-- CONTACT -->
-    <div id="contact">
-      <div class="ccontainer">
-        <h1>Contact Me</h1>
+    <div id="contact">     
+      <!-- <div class="contact-box">
+        
+        <form>
+          <h1>Shoot me a message!</h1>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="text" id="email" placeholder="Your email address" required>
+            <textarea id="message" rows="5" placeholder="Send me a message!" required></textarea>
+            <button type="submit"> Send it 	&rarr;</button>
 
+        </form>
+
+      </div> -->
+
+      <div class="ccontainer">
+        <button><a href="/files/" download="RESUME_Boe_Riccardo.pdf">Download resume</a></button>
         <p><i class="fa-solid fa-envelope"></i> <a href = "mailto: riccardoboe0">riccardoboe0@gmail.com</a></p>
         <br />
         <div class="social-icons">
@@ -289,9 +301,9 @@
 
       function switchTheme(e) {
         if (e.target.checked) {
-          document.documentElement.setAttribute("data-theme", "dark");
-        } else {
           document.documentElement.setAttribute("data-theme", "light");
+        } else {
+          document.documentElement.setAttribute("data-theme", "dark");
         }
       }
 
@@ -307,6 +319,8 @@
       function closemenu() {
         sidemenu.style.right = "-200px";
       }
+
     </script>
+
   </body>
 </html>
